@@ -25,7 +25,6 @@
     "@angular/platform-server": "~11.2.11",
     "@angular/router": "~11.2.11",
     "@nguniversal/express-engine": "^11.2.1",
-    "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

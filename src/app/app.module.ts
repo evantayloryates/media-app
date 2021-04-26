@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +11,6 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    ModuleMapLoaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
