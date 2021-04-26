@@ -24,7 +24,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Build Universal App
 
-Run `npm run build:ssr` to build both the browser bundle and server bundle distributions
+Run `npm run build:ssr` to build both the browser bundle and server bundle distributions.
+
+## Serve Universal App
+
+Run `npm run serve:ssr` to serve the Universal Application. Navigate to `http://localhost:4000/` (note that the default port is 4000 instead of the normal 4200).
 
 ## Further help
 
