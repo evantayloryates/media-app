@@ -15,9 +15,6 @@
 
 
 (function() {
-  $.writeln("MAYBE??????????????");
-  throw new Error($.getenv('PWD'));
+  $.getenv('PWD')
+  throw new Error(app.reflect.properties);
 })();
-
-
-
