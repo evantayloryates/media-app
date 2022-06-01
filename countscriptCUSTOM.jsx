@@ -18,9 +18,9 @@
   var assetName = 'static_brand_avatar.jpeg';
   var staticAssetFullPath = staticAssetsPath + assetName;
   
-  alert(staticAssetFullPath)
+  throw new Error(staticAssetFullPath);
   
   nexrender.selectLayersByName(null, 'Brand Avatar', function(layer) {
-    nexrender.replaceFootage(layer, staticAssetFullPath)
+    nexrender.replaceFootage(layer, staticAssetFullPath);
   });
 })();
