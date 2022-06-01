@@ -16,5 +16,5 @@
 
 (function() {
   $.getenv('PWD')
-  throw new Error(app.settings.reflect.methods);
+  throw new Error(app.project.rootFolder, "PROPERTIES", app.project.reflect.properties, "METHODS", app.project.reflect.methods);
 })();
