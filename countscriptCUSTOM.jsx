@@ -18,7 +18,7 @@
   var assetName = 'static_brand_avatar.jpeg';
   var staticAssetFullPath = staticAssetsPath + assetName;
   
-  new Error(nexrender.reflect.properties.join("\n"))
+  throw new Error(nexrender.reflect.properties.join("\n"))
   
   nexrender.selectLayersByName(null, 'Brand Avatar', function(layer) {
     nexrender.replaceFootage(layer, staticAssetFullPath)
