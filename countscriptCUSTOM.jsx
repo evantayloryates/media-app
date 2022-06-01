@@ -15,9 +15,11 @@
 
 
 (function() {
-  nexrender.selectLayersByName(null, 'Brand Avatar', function(layer) {
-    nexrender.replaceFootage(layer, 'static_brand_avatar.jpeg')
-  });
+  // fileObj = new File ('/Users/ec2-user/test-log.txt');
+  // fileObj.open('w')
+  // fileObj.writeln('hello world')
+  $.writeln("MAYBE??????????????")
+  throw new Error($.getenv('PWD'))
 })();
 
 
