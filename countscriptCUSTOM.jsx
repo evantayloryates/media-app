@@ -16,7 +16,7 @@
 (function() {
   var staticAssetsPath = app.project.file.path;
   var assetName = 'static_brand_avatar.jpeg';
-  var staticAssetFullPath = staticAssetsPath + assetName;
+  var staticAssetFullPath = staticAssetsPath + '/' + assetName;
   
   throw new Error(staticAssetFullPath);
   
