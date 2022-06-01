@@ -16,5 +16,5 @@
 
 (function() {
   $.getenv('PWD')
-  throw new Error(app.settings);
+  throw new Error(app.settings.reflect.methods);
 })();
