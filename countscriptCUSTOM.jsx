@@ -13,8 +13,14 @@
     });
 })();
 
-
 (function() {
-  $.getenv('PWD')
-  throw new Error(app.project.file.path);
+  var staticAssetsPath = app.project.file.path;
+  var assetName = 'static_brand_avatar.jpeg';
+  var staticAssetFullPath = staticAssetsPath + assetName;
+  
+  new Error(nexrender.reflect.properties.join("\n"))
+  
+  nexrender.selectLayersByName(null, 'Brand Avatar', function(layer) {
+    nexrender.replaceFootage(layer, staticAssetFullPath)
+  });
 })();
