@@ -15,11 +15,8 @@
 
 
 (function() {
-  // fileObj = new File ('/Users/ec2-user/test-log.txt');
-  // fileObj.open('w')
-  // fileObj.writeln('hello world')
-  $.writeln("MAYBE??????????????")
-  throw new Error($.getenv('PWD'))
+  $.writeln("MAYBE??????????????");
+  throw new Error($.getenv('PWD'));
 })();
 
 
