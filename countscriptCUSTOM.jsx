@@ -17,8 +17,8 @@
   }
 
   var mediaAssets = NX.media_assets || ['hello'];
-  throw new Error(mediaAssets.reflect.methods.join('\n'))
-  mediaAssets.map(
+  
+  mediaAssets.forEach(
     function (asset) {
       
       // This was the best way I could find to access NexRender's working dir
