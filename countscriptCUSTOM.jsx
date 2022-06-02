@@ -1,20 +1,21 @@
 
-var layerMap = {
-  "avatar": "Brand Avatar",
-  "avatar2": "Brand Avatar 2",
-  "bookmark": "Bookmark Icon",
-  "comment": "Comment Icon",
-  "like": "Like Icon",
-  "video": "Main Media",
-  "profilebg": "Profile BG",
-  "user": "User Icon",
-}
-
 /////////////////////////
 // INSERT MEDIA ASSETS //
 /////////////////////////
 
 (function() {
+
+  var layerMap = {
+    "avatar": "Brand Avatar",
+    "avatar2": "Brand Avatar 2",
+    "bookmark": "Bookmark Icon",
+    "comment": "Comment Icon",
+    "like": "Like Icon",
+    "video": "Main Media",
+    "profilebg": "Profile BG",
+    "user": "User Icon",
+  }
+
   var mediaAssets = NX.media_assets || [];
   mediaAssets.map(
     function (asset) {
