@@ -16,8 +16,8 @@
     "user": "User Icon",
   }
 
-  var mediaAssets = NX.media_assets || [];
-  throw new Error(mediaAssets)
+  var mediaAssets = NX.media_assets || ['hello'];
+  throw new Error(mediaAssets.reflect.methods.join('\n'))
   mediaAssets.map(
     function (asset) {
       
