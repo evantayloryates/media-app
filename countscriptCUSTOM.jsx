@@ -49,15 +49,15 @@
 ////////////////////////
 
 (function() {
-  
+
   var scaleAdjustments = [
     { 'layerName': 'Main Media',     'expression': '[300,300]' },
     { 'layerName': 'Brand Avatar',   'expression': '[75,75]'   },
     { 'layerName': 'Brand Avatar 2', 'expression': '[75,75]'   },
-    { 'layerName': 'Like Icon',      'expression': '[75,75]'   },
-    { 'layerName': 'Comment Icon',   'expression': '[75,75]'   },
-    { 'layerName': 'Bookmark Icon',  'expression': '[75,75]'   },
-    { 'layerName': 'User Icon',      'expression': '[69,69]'   },
+    { 'layerName': 'like.png',       'expression': '[75,75]'   },
+    { 'layerName': 'comment.png',    'expression': '[75,75]'   },
+    { 'layerName': 'bookmark.png',   'expression': '[75,75]'   },
+    { 'layerName': 'user.png',       'expression': '[69,69]'   },
   ];
   
   scaleAdjustments.forEach(
