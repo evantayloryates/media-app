@@ -6,14 +6,14 @@
 (function() {
 
   var layerMap = {
-    "avatar": "Brand Avatar",
-    "avatar2": "Brand Avatar 2",
-    "bookmark": "Bookmark Icon",
-    "comment": "Comment Icon",
-    "like": "Like Icon",
-    "video": "Main Media",
+    "avatar":    "Brand Avatar",
+    "avatar2":   "Brand Avatar 2",
+    "bookmark":  "Bookmark Icon",
+    "comment":   "Comment Icon",
+    "like":      "Like Icon",
+    "video":     "Main Media",
     "profilebg": "Profile BG",
-    "user": "User Icon",
+    "user":      "User Icon",
   };
 
   var tempAssets = [
@@ -59,7 +59,7 @@
     { 'layerName': 'User Icon',      'expression': '[69,69]'   },
   ];
   
-  scaleAdjustments.map(
+  scaleAdjustments.forEach(
     function (adjustment) {
       nexrender.selectLayersByName(null, adjustment.layerName, function(layer) {
         var parts = ['Scale'];
