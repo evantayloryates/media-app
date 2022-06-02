@@ -5,6 +5,8 @@
 
 (function() {
 
+  throw new Error("MEDIA INSERTION FIRST");
+
   var layerMap = {
     "avatar":    "Brand Avatar",
     "avatar2":   "Brand Avatar 2",
@@ -49,6 +51,7 @@
 ////////////////////////
 
 (function() {
+  throw new Error("MEDIA SCALE FIRST");
   var scaleAdjustments = [
     { 'layerName': 'Main Media',     'expression': '[300,300]' },
     { 'layerName': 'Brand Avatar',   'expression': '[75,75]'   },
