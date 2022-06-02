@@ -17,6 +17,7 @@
   }
 
   var mediaAssets = NX.media_assets || [];
+  throw new Error(mediaAssets)
   mediaAssets.map(
     function (asset) {
       
