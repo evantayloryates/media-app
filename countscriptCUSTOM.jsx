@@ -71,3 +71,32 @@
     }
   )
 })();
+
+
+/////////////////
+// INSERT TEXT //
+/////////////////
+
+(function() {
+  
+  var textInsertions = [
+    { 'layerName': 'Caption',             'textValue': '                          This is my new caption via API and this is long so it wraps a at least one line' },
+    { 'layerName': 'Follower Count',      'textValue': '22.2k followers' },
+    { 'layerName': 'CTA',                 'textValue': 'Drink More Milk' },
+    { 'layerName': 'View Count',          'textValue': '2,222 views' },
+    { 'layerName': 'username',            'textValue': 'MyAPIUsername' },
+    { 'layerName': 'Brand Display Name',  'textValue': 'My API Username' },
+    { 'layerName': 'username_influencer', 'textValue': 'cbaclig' }
+  ];
+
+  textInsertions.forEach(
+    function(insertion) {
+      nexrender.selectLayersByName(null, insertion.layerName, function(layer) {
+        var parts = ["Source Text"];
+        var value = { "value": insertion.textValue }
+        nexrender.changeValueForKeypath(layer, parts, value);
+        return true;
+      });
+    }
+  )
+})();
