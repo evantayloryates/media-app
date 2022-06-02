@@ -14,7 +14,7 @@
     "video": "Main Media",
     "profilebg": "Profile BG",
     "user": "User Icon",
-  }
+  };
 
   var tempAssets = [
     { 'layerName': 'Brand Avatar',   'filename': 'avatar.jpeg'   },
@@ -25,14 +25,14 @@
     { 'layerName': 'Main Media',     'filename': 'video.mp4'     },
     { 'layerName': 'Profile BG',     'filename': 'profilebg.png' },
     { 'layerName': 'User Icon',      'filename': 'user.png'      },
-  ]
+  ];
 
   var mediaAssets = NX.media_assets || tempAssets;
   
   mediaAssets.forEach(
     function (asset) {
       
-      // This was the best way I could find to access NexRender's working dir
+      // A roundabout way to access NexRender's download directory
       var localAssetDir = app.project.file.path;
       
       nexrender.selectLayersByName(null, asset.layerName, function(layer) {
@@ -43,3 +43,30 @@
   );
 })();
 
+
+////////////////////////
+// ADJUST MEDIA SCALE //
+////////////////////////
+
+(function() {
+  var scaleAdjustments = [
+    { 'layerName': 'Main Media',     'expression': '[300,300]' },
+    { 'layerName': 'Brand Avatar',   'expression': '[75,75]'   },
+    { 'layerName': 'Brand Avatar 2', 'expression': '[75,75]'   },
+    { 'layerName': 'Like Icon',      'expression': '[75,75]'   },
+    { 'layerName': 'Comment Icon',   'expression': '[75,75]'   },
+    { 'layerName': 'Bookmark Icon',  'expression': '[75,75]'   },
+    { 'layerName': 'User Icon',      'expression': '[69,69]'   },
+  ];
+  
+  scaleAdjustments.map(
+    function (adjustment) {
+      nexrender.selectLayersByName(null, adjustment.layerName, function(layer) {
+        var parts = ['Scale'];
+        var value = { 'expression': adjustment.expression }
+        nexrender.changeValueForKeypath(layer, parts, value);
+        return true;
+      });
+    }
+  )
+})();
